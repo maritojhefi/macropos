@@ -751,7 +751,7 @@ return array(
     'action' => 'Acción',
     'not_yet' => 'No listo',
     'item_qtty' => 'Cant.',
-    'export' => 'Exportasdsa',
+    'export' => 'Exportar',
 
     //reports roles
     'can_see_sales_reports' => 'Puede ver informes de ventas',
