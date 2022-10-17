@@ -1152,6 +1152,7 @@ return array(
     'you_can_not_allow_multi_user' => '¡No puede permitir multiusuario si ha habilitado el modo sin conexión en la configuración de la aplicación!',
 
     // Módulo de restaurante
+    'proceed_order' => 'Confirmar Orden',
     'order_type' => 'Tipo de pedido',
     'dine_in' => 'Cenar en',
     'take_away' => 'Take Away',
@@ -1254,4 +1255,5 @@ return array(
     'independent_chips' => 'Fichas independientes',
     'table_chips' => 'Fichas de mesa',
     'warning' => '¡Advertencia!',
+    'export_all' => 'Exportar Todo',
 );
