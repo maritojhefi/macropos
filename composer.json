@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.4",
+        "php": "7.4",
         "ext-json": "*",
         "barryvdh/laravel-dompdf": "^2.0",
         "fideloper/proxy": "^4.2",
@@ -34,7 +34,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+        "php": "7.4"
+        }
     },
     "extra": {
         "laravel": {
