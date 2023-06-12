@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title>Gain POS - Inventory and Sales Management System</title>
+
+        <link rel="shortcut icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              crossorigin="anonymous"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l">
+
+        <!-- Documentation CSS -->
+        <link rel="stylesheet" href="css/documentation.css">
+    </head>
+
+    <body>
+        <div class="d-none" id="top"></div>
+
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div id="menu-toggle" class="toggle-sidebar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="logo-wrapper">
+                    <img src="images/logo.png" class="img-fluid" width="250" alt="">
+                </div>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <!--Introduction-->
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Introduction</a>
+                        </li>
+
+                        <!--Installation-->
+                        <li class="nav-item active">
+                            <a href="installation.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Installation
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item active">
+                                    <a href="#installation" class="sub-menu-link js-page-scrolling">Server Requirements</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#howToInstall" class="sub-menu-link js-page-scrolling">How to Install</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--Quick Start Guide-->
+                        <li class="nav-item">
+                            <a href="quick-start-guide.html" class="nav-link">Quick Start Guide</a>
+                        </li>
+
+                        <!--Instruction Guide-->
+                        <li class="nav-item">
+                            <a href="instruction-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Instruction Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down d-none"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                        Usage of Application
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                                Settings > Application Settings
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#generalSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Application
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#salesSetting" class="sub-menu-link js-page-scrolling">
+                                                Sales Setting
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#emailSetting" class="sub-menu-link js-page-scrolling">
+                                                Email
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#emailTemplateSetting" class="sub-menu-link js-page-scrolling">
+                                                Email Template
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#smsSetting" class="sub-menu-link js-page-scrolling">
+                                                Sms Setting
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#smsTemplate" class="sub-menu-link js-page-scrolling">
+                                                Sms template
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#roles" class="sub-menu-link js-page-scrolling">
+                                                Roles
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#users" class="sub-menu-link js-page-scrolling">
+                                                Users
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#taxes" class="sub-menu-link js-page-scrolling">
+                                                Taxes
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#branches" class="sub-menu-link js-page-scrolling">
+                                                Branches
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#shipppingArea" class="sub-menu-link js-page-scrolling">
+                                                Shipping Area
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#cashRegisters" class="sub-menu-link js-page-scrolling">
+                                                Cash registers
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#restaurantTable" class="sub-menu-link js-page-scrolling">
+                                                Restaurant table
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#paymentTypes" class="sub-menu-link js-page-scrolling">
+                                                Payment Types
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#salesInvoice" class="sub-menu-link js-page-scrolling">
+                                                Sales Invoice
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#purchaseInvoice" class="sub-menu-link js-page-scrolling">
+                                                Purchase Invoice
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#invoiceTemplates" class="sub-menu-link js-page-scrolling">
+                                                Invoice Templates
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#productSettings" class="sub-menu-link js-page-scrolling">
+                                                Products
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#stockAdjustmentType" class="sub-menu-link js-page-scrolling">
+                                                Stock Adjustment Type
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#notifications" class="sub-menu-link js-page-scrolling">
+                                                Notification
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#update" class="sub-menu-link js-page-scrolling">
+                                                Update
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Development Guide-->
+                        <li class="nav-item">
+                            <a href="development-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Development Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down d-none"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#languageSettings" class="sub-menu-link js-page-scrolling">Language Settings</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#setLanguage" class="sub-menu-link js-page-scrolling">Set Language</a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#updateLanguage" class="sub-menu-link js-page-scrolling">Update Language</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#environmentConfiguration" class="sub-menu-link js-page-scrolling">Environment configuration</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#addNewPage" class="sub-menu-link js-page-scrolling">Add new page</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#changeColorAndDesign" class="sub-menu-link js-page-scrolling">Change color & design</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Change Log-->
+                        <li class="nav-item">
+                            <a href="change-log.html" class="nav-link">Change Log</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="page-content-wrapper">
+                <section class="scrollspy-section" id="installation">
+                    <h3 class="bd-title"> Installation </h3>
+                    <h5 class="bd-subtitle">Server requirements </h5>
+                    <ul>
+                        <li> PHP >= 7.4.0</li>
+                        <li> OpenSSL PHP Extension</li>
+                        <li> PDO PHP Extension</li>
+                        <li> Mbstring PHP Extension</li>
+                        <li> Tokenizer PHP Extension</li>
+                        <li> XML PHP Extension</li>
+                        <li> Ctype PHP Extension</li>
+                        <li> JSON PHP Extension</li>
+                        <li> ZIP PHP Extension</li>
+                        <li> BCMath PHP Extension</li>
+                    </ul>
+                </section>
+
+                <section class="scrollspy-section" id="howToInstall">
+                    <h5> How to install </h5>
+
+                    <h6> How to install in root directory-</h6>
+                    <ol>
+                        <li>Download the zipped file from CodeCanyon.</li>
+                        <li>Upload the zipped file into cPanel / server.</li>
+                        <li>Unzip the zipped file. Inside the unzipped folder you will get two folders "Documentation" and
+                            "upload"
+                        </li>
+                        <li>Move all the items from the "upload" folder to the root directory.</li>
+                        <li>Go to your web browser and type “your_domain.name” in the Address bar and follow the easy
+                            installer procedures step by step and install the application.
+                        </li>
+                        <li>
+                            Create the database and remember these things for future usage.
+                            <ul style="list-style-type:circle">
+                                <li>database_name</li>
+                                <li>username</li>
+                                <li>password</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h6> How to install in subfolder-</h6>
+                    <ol>
+                        <li>Download the zipped file from CodeCanyon.</li>
+                        <li>Upload the zipped file into cPanel / server.</li>
+                        <li>Unzip the zipped file. Inside the unzipped folder you will get two folders "Documentation" and
+                            "upload"
+                        </li>
+                        <li>Move all the items from the "upload" folder to /public_html/sub_folder directory.</li>
+                        <li>Go to your web browser and type “your_domain.name/sub_folder” in the Address bar and follow the
+                            easy installer procedures step by step and install the application
+                        </li>
+                        <li>
+                            Create the database and remember these things for future usage.
+                            <ul style="list-style-type:circle">
+                                <li>database_name</li>
+                                <li>username</li>
+                                <li>password</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <b>Note: Please remember to show hidden files. There are 2 files named .env and .htaccess which are
+                        hidden by default.
+                        Remember to upload all files.</b>
+
+                    <h6 class="pt-2"> How to test in local environment-</h6>
+                    <ol>
+                        <li>Make sure you have met our server requirements.</li>
+                        <li>Make sure that node.js and composer are installed in your local environment.</li>
+                        <li>Download the zipped file from CodeCanyon.</li>
+                        <li>Unzip the zipped file. Inside the unzipped folder you will get two folders "Documentation" and
+                            "upload"
+                        </li>
+                        <li>Move all the items from the "upload" folder to local directory from where you want to run the application </li>
+                        <li>Open the folder in the Editor (phpstorm, vscode etc.)</li>
+                        <li>Create a local database from phpmyadmin.</li>
+
+                        <li>Update the database credentials in the .env file. <br>
+                            DB_CONNECTION=mysql<br>
+                            DB_HOST=127.0.0.1/localhost<br>
+                            DB_PORT=3306<br>
+                            DB_DATABASE=your_database_name<br>
+                            DB_USERNAME=your_database_name<br>
+                            DB_PASSWORD=your_database_password<br>
+                        </li>
+                        <li>Now, go to editor and open config/gain.php file and set 'installed' => true,</li>
+                        <li>After that, go to database/seeders/DatabaseSeeder file and paste “UsersTableSeeder::class” inside the $this-> call () function.
+                        </li>
+                        <li>Open terminal and run “php artisan migrate:fresh --seed”</li>
+                        <li>Login with <br> User: <i> admin@demo.com</i> <br> Password: <i>123456</i></li>
+                        <li>Now, open the browser and go to your local URL to run the Application locally.</li>
+                        <li>Open the terminal and run "npm install". If you want to change anything into the vue (front end) code.</li>
+                    </ol>
+
+                    <h6 class="pt-2"> How to install in local environment-</h6>
+                    <h5>Please follow the procedure bellow or checkout the local installation <a href="https://youtu.be/q-6lri3I9h8" target="_blank">video</a>: </h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q-6lri3I9h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <ol>
+                        <li>Make sure you have met our server requirements.</li>
+                        <li>Make sure that node.js and composer are installed in your local environment.</li>
+                        <li>Download the zipped file from CodeCanyon.</li>
+                        <li>Unzip the zipped file. Inside the unzipped folder you will get two folders "Documentation" and
+                            "upload"
+                        </li>
+                        <li>Move all the items from the "upload" folder to local directory from where you want to run the application </li>
+                        <li>Open the folder in the Editor (phpstorm, vscode etc.)</li>
+                        <li>Create a local database from phpmyadmin.</li>
+                        <li>On the terminal, run "php artisan serve"</li>
+                        <li>Then you will get a URL in terminal: ex (http://127.0.0.1:8000)</li>
+                        <li>Copy the URL from the terminal and paste the URL into the browser.</li>
+                        <li> After that, complete the installation process. You should be able to use it locally</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <a class="js-page-scrolling back-to-top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </a>
+
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+        <script src="js/documentation.js" type="text/javascript"></script>
+    </body>
+</html>

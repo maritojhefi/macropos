@@ -1202,10 +1202,18 @@ export default {
             currentStorage = ((data.length * 16) / (8 * 1024)).toFixed(2);
 
             if (this.checkBrowser() === "Chrome") {
-                window.webkitStorageInfo.queryUsageAndQuota(webkitStorageInfo.PERSISTENT, function (usage, total) {
-                    if (total != 0) instance.totalStorage = total;
-                    instance.remainingStorage = instance.totalStorage - currentStorage;
-                });
+				try { 
+                	// window.webkitStorageInfo.queryUsageAndQuota(webkitStorageInfo.PERSISTENT, function (usage, total) {
+                 //    	if (total != 0) instance.totalStorage = total;
+                 //    	instance.remainingStorage = instance.totalStorage - currentStorage;
+                	// });
+					navigator.webkitTemporaryStorage.queryUsageAndQuota((usage, total) => {
+                    	if (total != 0) instance.totalStorage = total;
+                    	instance.remainingStorage = instance.totalStorage - currentStorage;
+					});
+ 				} catch (e) {
+ 					console.log(e);
+ 				}
                 return instance.remainingStorage < instance.minimumSizeOfLocalStorage;
             } else {
                 instance.remainingStorage = instance.totalStorage - currentStorage;

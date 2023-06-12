@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <title>Gain POS - Inventory and Sales Management System</title>
+
+    <link rel="shortcut icon" href="images/icon.png"/>
+    <link rel="apple-touch-icon" href="images/icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l">
+
+    <!-- Documentation CSS -->
+    <link rel="stylesheet" href="css/documentation.css">
+</head>
+
+<body>
+<div class="d-none" id="top"></div>
+
+<div class="wrapper">
+    <div class="sidebar-wrapper">
+        <div id="menu-toggle" class="toggle-sidebar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo-wrapper">
+            <img src="images/logo.png" class="img-fluid" width="250" alt="">
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <!--Introduction-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Introduction</a>
+                </li>
+
+                <!--Installation-->
+                <li class="nav-item">
+                    <a href="installation.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Installation
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down d-none"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu d-none">
+                        <li class="sub-menu-item">
+                            <a href="#installation" class="sub-menu-link js-page-scrolling">Server Requirements</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#howToInstall" class="sub-menu-link js-page-scrolling">How to Install</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Quick Start Guide-->
+                <li class="nav-item">
+                    <a href="quick-start-guide.html" class="nav-link">Quick Start Guide</a>
+                </li>
+
+                <!--Instruction Guide-->
+                <li class="nav-item">
+                    <a href="instruction-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Instruction Guide
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down d-none"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu d-none">
+                        <li class="sub-menu-item">
+                            <a href="#usageOfAppLevel" class="sub-menu-link js-page-scrolling">
+                                Usage of Application
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                        Settings > Application Settings
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#generalSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                        Application
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesSetting" class="sub-menu-link js-page-scrolling">
+                                        Sales Setting
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#emailSetting" class="sub-menu-link js-page-scrolling">
+                                        Email
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#emailTemplateSetting" class="sub-menu-link js-page-scrolling">
+                                        Email Template
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#smsSetting" class="sub-menu-link js-page-scrolling">
+                                        Sms Setting
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#smsTemplate" class="sub-menu-link js-page-scrolling">
+                                        Sms template
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#roles" class="sub-menu-link js-page-scrolling">
+                                        Roles
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#users" class="sub-menu-link js-page-scrolling">
+                                        Users
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#taxes" class="sub-menu-link js-page-scrolling">
+                                        Taxes
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#branches" class="sub-menu-link js-page-scrolling">
+                                        Branches
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#shipppingArea" class="sub-menu-link js-page-scrolling">
+                                        Shipping Area
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#cashRegisters" class="sub-menu-link js-page-scrolling">
+                                        Cash registers
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#restaurantTable" class="sub-menu-link js-page-scrolling">
+                                        Restaurant table
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#paymentTypes" class="sub-menu-link js-page-scrolling">
+                                        Payment Types
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#salesInvoice" class="sub-menu-link js-page-scrolling">
+                                        Sales Invoice
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#purchaseInvoice" class="sub-menu-link js-page-scrolling">
+                                        Purchase Invoice
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#invoiceTemplates" class="sub-menu-link js-page-scrolling">
+                                        Invoice Templates
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#productSettings" class="sub-menu-link js-page-scrolling">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#stockAdjustmentType" class="sub-menu-link js-page-scrolling">
+                                        Stock Adjustment Type
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#notifications" class="sub-menu-link js-page-scrolling">
+                                        Notification
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#update" class="sub-menu-link js-page-scrolling">
+                                        Update
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Development Guide-->
+                <li class="nav-item">
+                    <a href="development-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                        Development Guide
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16"
+                             height="16"
+                             fill="currentColor"
+                             class="bi bi-chevron-down d-none"
+                             viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a>
+                    <ul class="sub-menu d-none">
+                        <li class="sub-menu-item">
+                            <a href="#languageSettings" class="sub-menu-link js-page-scrolling">Language Settings</a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="#setLanguage" class="sub-menu-link js-page-scrolling">Set Language</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#updateLanguage" class="sub-menu-link js-page-scrolling">Update Language</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#environmentConfiguration" class="sub-menu-link js-page-scrolling">Environment configuration</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#addNewPage" class="sub-menu-link js-page-scrolling">Add new page</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="#changeColorAndDesign" class="sub-menu-link js-page-scrolling">Change color & design</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Change Log-->
+                <li class="nav-item active">
+                    <a href="change-log.html" class="nav-link">Change Log</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-content-wrapper">
+        <section>
+            <h3>
+                Change Logs
+            </h3>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.8 – 13 March, 2022</h6>
+                <div>
+                    <code class="text-muted d-block">[Updated] Documentation updated </code>
+                    <code class="text-muted d-block">[Fixed] Fixed browser issue for sales view. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.7 – 28 August, 2022</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Added export all product at a time. </code>
+                    <code class="text-muted d-block">[Added] Added export sales report at a time. </code>
+                    <code class="text-muted d-block">[Added] Added export purchase report at a time. </code>
+                    <code class="text-muted d-block">[Added] Added export inventory report at a time. </code>
+                    <code class="text-muted d-block">[Fixed] Fixed Small invoice edit bug. </code>
+                    <code class="text-muted d-block">[Fixed] Fixed opening stock quantity bug. </code>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.6.1 – 07 February, 2022</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Thermal Sales Invoice Template added.</code>
+                    <code class="text-muted d-block">[Added] Thermal Purchase Invoice Template added.</code>
+                    <code class="text-muted d-block">[Added] 58mm thermal invoice support added.</code>
+                    <code class="text-muted d-block">[Fixed] 80mm thermal invoice bug fixed.</code>
+                    <code class="text-muted d-block">[Updated] Some bug fixes.</code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.6 – 7 April, 2021</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] 70mm invoice template support </code>
+                    <code class="text-muted d-block">[Fixed] Discount on Return </code>
+                    <code class="text-muted d-block">[Updated] Better user experience for designing invoice </code>
+                    <code class="text-muted d-block">[Updated] Invoice Template add and edit </code>
+                    <code class="text-muted d-block">[Updated] Route segmentation in file </code>
+                    <code class="text-muted d-block">[Updated] View route removed from API route </code>
+                    <code class="text-muted d-block">[Updated] Documentation Updated </code>
+                    <code class="text-muted d-block">[Updated] Other structural change in code base </code>
+                    <code class="text-muted d-block">[Updated] Some bug fixes </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5.6 – 30 October, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Fixed] Purchase code saving issue. </code>
+                    <code class="text-muted d-block">[Updated] Removed demo email address from sign in form. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5.5 – 28 October, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Fixed] User invitation bug fixed. </code>
+                    <code class="text-muted d-block">[Fixed] Installation bug fixed. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5.4 – 12 October, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Filter products by category in the POS view.</code>
+                    <code class="text-muted d-block">[Added] User should be able to see individual product note in Invoice.</code>
+                    <code class="text-muted d-block">[Added] Admin should be able to upload customer profile picture. </code>
+                    <code class="text-muted d-block">[Fixed] User should be able to delete sales after enable delete sale from setting bug major sales. </code>
+                    <code class="text-muted d-block">[Fixed] User should be able to see item purchased number properly in reports. </code>
+                    <code class="text-muted d-block">[Fixed] Stock adjustment of different branches issues fixed.  </code>
+                    <code class="text-muted d-block">[Fixed] Product sales quantity is not match with sales reports. </code>
+                    <code class="text-muted d-block">[Fixed] Shortcut bug fixed. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5.2 – 25 June, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Customer and Supplier TIN number added while creating customer and supplier.</code>
+                    <code class="text-muted d-block">[Added] Customer and Supplier TIN number showed in invoice.</code>
+                    <code class="text-muted d-block">[Added] Salesman will be able to add note order wise. </code>
+                    <code class="text-muted d-block">[Added]Added note will be shown in invoice. </code>
+                    <code class="text-muted d-block">[Updated] Now Selling Price and purchase price field is optional. </code>
+                    <code class="text-muted d-block">[Updated] Payment report now an be search by Invoice Id along with search by cash register. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed in exchange amount. </code>
+                    <code class="text-muted d-block">[Fixed] Searchable dropdown field added for selecting product while adjusting stock. </code>
+                    <code class="text-muted d-block">[Fixed] Search added for product search in barcode print option. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5.1 – 11 May, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Updated] Number validation added in Purchase Invoice Settings and Sales Invoice Settings. </code>
+                    <code class="text-muted d-block">[Updated] Added Internal transfer from branch to branch without payment. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed of large price amount in Invoice. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed for search products name with Greek character. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.5 – 15 April, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Shipment area settings and option to enable in branch. </code>
+                    <code class="text-muted d-block">[Added] Shipment report added.</code>
+                    <code class="text-muted d-block">[Added] User can change shipment status. </code>
+                    <code class="text-muted d-block">[Added] Invoice ID barcode in invoice print receipt. </code>
+                    <code class="text-muted d-block">[Added] Welcome SMS option for new customer. </code>
+                    <code class="text-muted d-block">Added] Date range filter added in Sales details. </code>
+                    <code class="text-muted d-block">[Added] Internal transfer in sales view. </code>
+                    <code class="text-muted d-block">[Added] Update functionality added. </code>
+                    <code class="text-muted d-block">[Updated] New font family updated. </code>
+                    <code class="text-muted d-block">[Added] Update functionality added. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed in register info. </code>
+                    <code class="text-muted d-block">Fixed] Bug fixed for showing large number of products. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed while return product. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.4.2 – 27 February, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Nexmo SMS integration. </code>
+                    <code class="text-muted d-block">[Added] Customizable SMS template. </code>
+                    <code class="text-muted d-block">[Added] Option for purchase return including partial purchase return. </code>
+                    <code class="text-muted d-block">[Added] Permission for role for purchase invoice settings. </code>
+                    <code class="text-muted d-block">[Updated] Upgraded laravel to 6. </code>
+                    <code class="text-muted d-block">[Updated] Individual sequential invoice ID for sales and purchase. </code>
+                    <code class="text-muted d-block">[Updated] Product Add/ Edit Modal size increased. </code>
+                    <code class="text-muted d-block">[Fixed] Show out of stock product variant name. </code>
+                </div>
+            </div>
+
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.4.1 – 27 February, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] [Updated] Updated app update functionality. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.4 – 18 February, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] User will be able add initial quantity while adding product. </code>
+                    <code class="text-muted d-block">[Added] User can return product partially multiple times until all products gets return fully. </code>
+                    <code class="text-muted d-block">[Added] Item wise sales details report. </code>
+                    <code class="text-muted d-block">[Added] Date range filter added for Inventory details. </code>
+                    <code class="text-muted d-block">[Added] Settings to for sales delete. </code>
+                    <code class="text-muted d-block">[Added] Settings to for sales date change. </code>
+                    <code class="text-muted d-block">[Updated] Show warning while add multiple product with same name. </code>
+                    <code class="text-muted d-block">[Updated] Updated receipt to get better view. </code>
+                    <code class="text-muted d-block">[Updated] Login page design. </code>
+                    <code class="text-muted d-block">[Updated] Dashboard showing profit without internal sales. </code>
+                    <code class="text-muted d-block">[Fixed] Register log report bug solved. </code>
+                    <code class="text-muted d-block">[Fixed] Out of stock product restriction bug solved in sales view. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.6 – 18 February, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Updated] Updated app update functionality. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.5 – 24 January, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Search customer by phone and address in sales page. </code>
+                    <code class="text-muted d-block">[Fixed] Phone and address not showing on receipt. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.4 – 19 January, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Added new settings to restrict out of stock sales. </code>
+                    <code class="text-muted d-block">[Added] Added customer phone number and address variable in sales templates and cart. </code>
+                    <code class="text-muted d-block">[Added] Added 3 decimal settings option. </code>
+                    <code class="text-muted d-block">[Added] Added current resister details modal in sales view. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.3 – 5 January, 2020</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Added low stock notifications for branch managers. </code>
+                    <code class="text-muted d-block">[Added] Added option to set branch manager in branches. </code>
+                    <code class="text-muted d-block">[Added] Added notifications settings. </code>
+                    <code class="text-muted d-block">[Added] Added option to setup cron job. </code>
+                    <code class="text-muted d-block">[Added] Added due payment option form the sales view. </code>
+                    <code class="text-muted d-block">[Added] Added out of stock tag with products in sales view. </code>
+                    <code class="text-muted d-block">[Added] Added sales alert for out of stock products. </code>
+                    <code class="text-muted d-block">[Added] Updated sales page navigation UI for better visibility. </code>
+                    <code class="text-muted d-block">[Added] Sales view product searching bug fixed. </code>
+                    <code class="text-muted d-block">[Added] Added option to add product category, groups, brands and units from the new product modal. </code>
+                    <code class="text-muted d-block">[Updated] Increased maximum product price length. </code>
+                    <code class="text-muted d-block">[Updated] Improved some UI and usability in different pages. </code>
+                    <code class="text-muted d-block">[Updated] Removed email requirement for adding new suppliers. </code>
+                    <code class="text-muted d-block">[Updated] Optimized default users permissions. </code>
+                    <code class="text-muted d-block">[Fixed] Import from excel bug fixed. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.2 – 5 December, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Added personal todo list for users. </code>
+                    <code class="text-muted d-block">[Added] Added filters and group by option in profit and loss report. </code>
+                    <code class="text-muted d-block">[Added] Added total sales and purchase report. </code>
+                    <code class="text-muted d-block">[Added] Added Customer summary report. </code>
+                    <code class="text-muted d-block">[Added] Added Supplier summary report. </code>
+                    <code class="text-muted d-block">[Added] Added option to adjust stock. </code>
+                    <code class="text-muted d-block">[Added] Added settings for stock adjustment type. </code>
+                    <code class="text-muted d-block">[Added] Added option to show/hide app name in barcode print. </code>
+                    <code class="text-muted d-block">[Updated] Added max price restriction in product price. </code>
+                    <code class="text-muted d-block">[Fixed] Can't complete sales in offline bug fixed. </code>
+                    <code class="text-muted d-block">[Fixed] Pay button is hidden for take away type sales. </code>
+                    <code class="text-muted d-block">[Fixed] Sales view cart item scrolling bug fixed for small screen. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3.1 – 19 November, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Fixed] Removed demo user name from login page. </code>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.3 – 17 November, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Restaurant sales module. </code>
+                    <code class="text-muted d-block">[Added] Added option to sale including and excluding tax. </code>
+                    <code class="text-muted d-block">[Added] Added new filters in sales report. </code>
+                    <code class="text-muted d-block">[Fixed] Some language text and usability bug fixed. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.2.1 – 19 October, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Fixed] Fixed built in invoice template preview and editing of the templates. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.2 – 15 October, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Offline sales functionality. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.1 – 22 September, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Added] Send receipt to customer after sales. </code>
+                    <code class="text-muted d-block">[Added] Internal sales and receiving (branch to branch). </code>
+                    <code class="text-muted d-block">[Added] Credit sales and purchases. </code>
+                    <code class="text-muted d-block">[Added] Ability to pay due amounts from customers and suppliers. </code>
+                    <code class="text-muted d-block">[Added] Customizable invoice templates. </code>
+                    <code class="text-muted d-block">[Added] Support decimals in sales quantity. </code>
+                    <code class="text-muted d-block">[Updated] Responsive design in POS. </code>
+                    <code class="text-muted d-block">[Updated] Some usability improvements. </code>
+                    <code class="text-muted d-block">[Fixed] Bug fixed in reports. </code>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="mb-2">Version 1.0.1 – 22 August, 2019</h6>
+                <div>
+                    <code class="text-muted d-block">[Fixed] Install related bug fixed. </code>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script src="js/documentation.js" type="text/javascript"></script>
+</body>
+</html>
